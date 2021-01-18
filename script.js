@@ -12,3 +12,9 @@ var descrizione = {
   'cognome': 'cofano',
   'età': '27'
 }
+
+
+// stampa a schermo con il ciclo FOR tutte le proprietà
+for (var dati in descrizione) {
+  alert('Studente ' + dati + ': ' + descrizione[dati]);
+}
