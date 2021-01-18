@@ -18,3 +18,40 @@ var descrizione = {
 for (var dati in descrizione) {
   alert('Studente ' + dati + ': ' + descrizione[dati]);
 }
+
+
+// Creazione array di oggetti di studenti
+var studenti = [] //array vuoto che verrà riempito con gli elementi dopo
+
+// array vuoti che verranno pushati nell'array "studenti"
+var studenteUno = {};
+var studenteDue = {};
+var studenteTre = {};
+var studenteQuattro = {};
+
+// si esegue il push degli oggetti nell'array studenti
+studenti.push(studenteUno)
+studenti.push(studenteDue)
+studenti.push(studenteTre)
+studenti.push(studenteQuattro)
+
+// e adesso si procede impostando il valore dei vari oggetti
+studenteUno.nome = 'Ottavio';
+studenteDue.nome = 'Alfredo';
+studenteTre.nome = 'Enrico';
+studenteQuattro.nome = 'Massimo';
+
+studenteUno.cognome = 'Fogliata';
+studenteDue.cognome = 'Guida';
+studenteTre.cognome = 'Gennari';
+studenteQuattro.cognome = 'Bemmini';
+
+studenteUno.eta = '33';
+studenteDue.eta = '37';
+studenteTre.eta = '30';
+studenteQuattro.eta = '28';
+
+// ciclo for per stampare in console.log i dati degli studenti (nome + cognome)
+for (var i = 0; i < studenti.length; i++) {
+  console.log(studenti[i].nome + " " +  studenti[i].cognome);
+}
